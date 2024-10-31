@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<style>
+    body{
+        background-image: url(pict7.jpg);
+        background-size: 1500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container{
+        background: rgba(255, 255, 255, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+        width: 300px;
+        font-family:Helvetica;
+    }
+
+    h1{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    label{
+        display:block;
+        font-weight: bold;
+    }
+    
+    input[type="text"],
+    select {
+        width: 94%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .gender{
+        display: flex;
+        justify-content:space-between;
+        margin-bottom: 10px;
+    }
+
+    .hobby input[type="checkbox"],
+    .hobby label {
+        display: inline-block;
+    }
+
+    input[type="checkbox"] {
+        margin-right: 5px;
+        margin-left: 55px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 12px;
+        padding: 7px;
+        background-color: #6e6ef5;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover{
+        background-color: rgb(141, 178, 247);
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Registrasi</h1>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama"><br>
+
+        <label for="tanggal">Tanggal Lahir:</label>
+        <input type="text" id="tanggal" name="tanggal" placeholder="dd/mm/yyyy"><br>
+
+        <label for="alamat">Alamat:</label>
+        <input type="text" id="alamat" name="alamat"><br>
+
+        <label for="kota">Kota:</label>
+        <input type="text" id="kota" name="kota"><br>
+
+        <label for="pekerjaan">Pekerjaan:</label>
+        <select id="pekerjaan" name="pekerjaan">
+            <option value="freelance">Freelance</option>
+            <option value="kantoran">Kantoran</option>
+            <option value="design">Design</option>
+        </select><br>
+
+        <div class="gender">
+            <label>Jenis Kelamin:</label>
+            <input type="radio" id="pria" name="jenis_kelamin" value="pria">
+            <label for="pria">Pria</label>
+            <input type="radio" id="wanita" name="jenis_kelamin" value="wanita">
+            <label for="wanita">Wanita</label><br>
+        </div>
+
+        <div class="hobby">
+            <label>Hobby:</label>
+            <div>
+                <input type="checkbox" id="game" name="hobby" value="game">
+                <label for="game">Game</label>
+            </div>
+            <div>
+                <input type="checkbox" id="sport" name="hobby" value="sport">
+                <label for="sport">Sport</label>
+            </div>
+            <div>
+                <input type="checkbox" id="traveling" name="hobby" value="traveling">
+                <label for="traveling">Traveling</label>
+             </div>
+        </div><br>
+
+        <div>
+            <button type="submit">Kirim</button>
+        </div>
+        <div>
+            <button type="reset">Cancel</button>
+        </div>
+       
+    </div>
+</body>
+</html>
